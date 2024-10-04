@@ -13,16 +13,16 @@ layers:
   - P
   - '['
   - ''
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: Ctrl}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: RCMD}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RCMD}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: Ctrl}
   - ''''
   - '~'
   - Z
