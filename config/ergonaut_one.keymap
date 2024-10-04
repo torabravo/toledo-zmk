@@ -25,19 +25,19 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R        &kp T    &kp Y      &kp U       &kp I      &kp O    &kp P     &kp LBKT
-&none  &kp A  &kp S  &kp D         &kp F        &kp G    &kp H      &kp J       &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&none  &kp Z  &kp X  &kp C         &kp V        &kp B    &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                     &lt 2 ESCAPE  &lt 1 SPACE  &kp TAB  &kp ENTER  &lt 3 BSPC  &lt 4 DEL
+&none      &kp Q  &kp W  &kp E         &kp R        &kp T    &kp Y      &kp U       &kp I      &kp O    &kp P     &kp LBKT
+&none      &kp A  &kp S  &kp D         &kp F        &kp G    &kp H      &kp J       &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp TILDE  &kp Z  &kp X  &kp C         &kp V        &kp B    &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                         &lt 2 ESCAPE  &lt 1 SPACE  &kp TAB  &kp ENTER  &lt 3 BSPC  &lt 4 DEL
             >;
         };
 
         layer_nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none      &none     &none     &none      &none  &kp PG_UP  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &none  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none  &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&none  &none      &none     &none     &none      &none  &none      &none         &none     &none          &none  &none
+                            &none     &none      &none  &none      &none         &none
             >;
 
             label = "nav";
@@ -45,10 +45,10 @@
 
         layer_sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp EQUAL     &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PLUS)   &none          &none
+&none  &kp LCTRL     &kp LALT    &kp LGUI       &kp LSHFT     &kp LS(CARET)  &kp LS(STAR)  &kp LS(LBRC)  &kp LS(RBRC)  &kp MINUS      &kp LS(COLON)  &none
+&none  &none         &kp BSLH    &kp LS(PIPE)   &kp BSLH      &kp LS(AMPS)   &kp LS(DQT)   &kp LBKT      &kp RBKT      &kp LS(UNDER)  &kp LS(QMARK)  &none
+                                 &none          &none         &none          &none         &none         &none
             >;
 
             label = "sym";
@@ -56,20 +56,24 @@
 
         layer_num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp FSLH  &kp N7  &kp N8   &kp N9  &kp PLUS   &none  &none      &none     &none     &none      &none
+&none  &kp STAR  &kp N4  &kp N5   &kp N6  &kp MINUS  &none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none
+&none  &none     &kp N1  &kp N2   &kp N3  &kp EQUAL  &none  &none      &none     &none     &none      &none
+                         &kp DOT  &kp N0  &none      &none  &none      &none
             >;
+
+            label = "num";
         };
 
         layer_fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_VOLUME_UP    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &none      &kp C_BRIGHTNESS_INC
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &kp C_VOLUME_DOWN  &kp RSHFT   &kp RGUI          &kp RALT    &kp RCTRL  &kp C_BRIGHTNESS_DEC
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F10  &kp K_MUTE         &none       &none             &none       &none      &none
+                      &none   &none   &none    &none              &none       &none
             >;
+
+            label = "fun";
         };
     };
 };
