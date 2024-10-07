@@ -1,6 +1,6 @@
 layers:
   default:
-  - ''
+  - GLOBE
   - Q
   - W
   - E
@@ -12,16 +12,16 @@ layers:
   - O
   - P
   - '['
-  - ''
+  - Caps Word
   - {t: A, h: Ctrl}
-  - {t: S, h: LEFT ALT}
+  - {t: S, h: Alt}
   - {t: D, h: RCMD}
   - {t: F, h: LEFT SHIFT}
   - G
   - H
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RCMD}
-  - {t: L, h: RIGHT ALT}
+  - {t: L, h: Alt}
   - {t: ;, h: Ctrl}
   - ''''
   - '~'
@@ -110,7 +110,7 @@ layers:
   - '-'
   - 'Sft+ :'
   - ''
-  - ''
+  - Boot
   - ''
   - \
   - Sft+ |
@@ -207,7 +207,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Boot
   - ''
   - ''
   - ''
