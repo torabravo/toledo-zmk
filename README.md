@@ -1,32 +1,10 @@
-# ZMK Firmware for Ergonaut One keyboard
-
-This is a repository for a ZMK Firmware for Ergonaut One keyboard.
-
-## Default keymap
-
-Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/13d0f7ae7a8b5835efcd23d61f50336a)
+## Keymap
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) – check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
 
 ![Keymap Representation](./keymap-drawer/ergonaut_one.svg?raw=true "Keymap Representation")
 
-This layout is heavily inspired from [Watchman 42-key layout](https://github.com/aroum/Watchman-layouts)
-
-## FAQ
-
-- [FAQ](#faq)
-  - [How to change the keymap?](#how-to-change-the-keymap)
-  - [How to flash the keyboard?](#how-to-flash-the-keyboard)
-  - [How to pair halves?](#how-to-pair-halves)
-  - [Problems](#problems)
-    - [I'm getting File Transfer Error after copying firmware to the keyboard](#im-getting-file-transfer-error-after-copying-firmware-to-the-keyboard)
-
-### How to change the keymap?
-
-1. Fork or use this repository as a template https://github.com/ergonautkb/one-zmk-config.
-2. Enable Github Actions for your repository.
-
-You have two options on how to configure your desired keymap:
+## Keymap edit
 
 #### Option 1. Keymap Editor
 
