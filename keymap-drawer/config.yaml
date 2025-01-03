@@ -65,20 +65,25 @@ parse_config:
 
   zmk_keycode_map:
     # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
+    C_VOLUME_UP: $$phosphor:regular/speaker-high$$
+    C_VOLUME_DOWN: $$phosphor:regular/speaker-low$$
+    K_MUTE: $$phosphor:regular/speaker-x$$
     C_AL_CALC: Calc
-    C_PP: Play Pause
+    C_PP: $$phosphor:regular/play-pause$$
+    C_BRIGHTNESS_INC: $$phosphor:regular/sun$$
+    C_BRIGHTNESS_DEC: $$phosphor:regular/sun-dim$$
 
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
+    LCTRL: $$phosphor:regular/control$$
+    RCTRL: $$phosphor:regular/control$$
+    LALT: $$phosphor:regular/option$$
+    RALT: $$phosphor:regular/option$$
     LGUI: $$phosphor:regular/command$$
     RGUI: $$phosphor:regular/command$$
-    LSHFT: Shift
-    RSHFT: Shift
+    LSHFT: $$phosphor:regular/arrow-fat-up$$
+    RSHFT: $$phosphor:regular/arrow-fat-up$$
+    ENTER: Enter
     ESC: Esc
+    ESCAPE: Esc
     SPACE: ␣
     BSPC: ⌫
     RET: ⏎
@@ -99,9 +104,9 @@ parse_config:
     LEFT: ←
     RIGHT: →
 
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
+    C_PP: $$phosphor:regular/play-pause$$
+    C_NEXT: $$phosphor:regular/fast-forward$$
+    C_PREV: $$phosphor:regular/rewind$$
 
     # defaults
     AMPERSAND: '&'
