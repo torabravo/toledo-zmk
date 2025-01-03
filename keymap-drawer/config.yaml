@@ -74,8 +74,8 @@ parse_config:
     RCTRL: Ctrl
     LALT: Alt
     RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
+    LGUI: $$phosphor:regular/command$$
+    RGUI: $$phosphor:regular/command$$
     LSHFT: Shift
     RSHFT: Shift
     ESC: Esc

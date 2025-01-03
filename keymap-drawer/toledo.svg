@@ -1,4 +1,9 @@
 <svg width="900" height="1709" viewBox="0 0 900 1709" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>/* start glyphs */
+<svg id="phosphor:regular/command">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180,144H160V112h20a36,36,0,1,0-36-36V96H112V76a36,36,0,1,0-36,36H96v32H76a36,36,0,1,0,36,36V160h32v20a36,36,0,1,0,36-36ZM160,76a20,20,0,1,1,20,20H160ZM56,76a20,20,0,0,1,40,0V96H76A20,20,0,0,1,56,76ZM96,180a20,20,0,1,1-20-20H96Zm16-68h32v32H112Zm68,88a20,20,0,0,1-20-20V160h20a20,20,0,0,1,0,40Z"/></svg>
+</svg>
+</defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -384,7 +389,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Gui</text>
+<use href="#phosphor:regular/command" xlink:href="#phosphor:regular/command" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/command"/>
 </g>
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -534,7 +539,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Gui</text>
+<use href="#phosphor:regular/command" xlink:href="#phosphor:regular/command" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/command"/>
 </g>
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -703,7 +708,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Gui</text>
+<use href="#phosphor:regular/command" xlink:href="#phosphor:regular/command" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/command"/>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -866,7 +871,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Gui</text>
+<use href="#phosphor:regular/command" xlink:href="#phosphor:regular/command" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/command"/>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

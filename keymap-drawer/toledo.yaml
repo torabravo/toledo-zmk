@@ -58,7 +58,7 @@ layers:
   - ''
   - Ctrl
   - Alt
-  - Gui
+  - $$phosphor:regular/command$$
   - Shift
   - ''
   - Page Down
@@ -101,7 +101,7 @@ layers:
   - ''
   - Ctrl
   - Alt
-  - Gui
+  - $$phosphor:regular/command$$
   - Shift
   - ^
   - '*'
@@ -149,7 +149,7 @@ layers:
   - '-'
   - ''
   - Shift
-  - Gui
+  - $$phosphor:regular/command$$
   - Alt
   - Ctrl
   - ''
@@ -192,7 +192,7 @@ layers:
   - F11
   - VOLUME DOWN
   - Shift
-  - Gui
+  - $$phosphor:regular/command$$
   - Alt
   - Ctrl
   - BRIGHTNESS DEC
