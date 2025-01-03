@@ -2,7 +2,7 @@
 
 Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) – check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
 
-![Keymap Representation](./keymap-drawer/ergonaut_one.svg?raw=true "Keymap Representation")
+![Keymap Representation](./keymap-drawer/toledo.svg?raw=true "Keymap Representation")
 
 ## Keymap edit
 
@@ -15,7 +15,7 @@ Below representation was generated with [`keymap-drawer`](https://github.com/cak
 
 #### Option 2. Manual
 
-1. Make changes to the [ergonaut_one.keymap](config/boards/shields/ergonaut_one/ergonaut_one.keymap) file using your favorite text editor.
+1. Make changes to the [toledo.keymap](config/boards/shields/toledo/toledo.keymap) file using your favorite text editor.
 2. Commit changes to your repository.
 3. Go to `Actions` tab in your Github repository, locate the latest build and wait for it to complete.
 4. Grab the `firmware.zip` archive
@@ -23,7 +23,7 @@ Below representation was generated with [`keymap-drawer`](https://github.com/cak
 ### How to flash the keyboard?
 
 1. Obtain `firmware.zip`
-2. Unzip `firmware.zip` - you should have `ergonaut_one_left-seeeduino_xiao_ble-zmk.uf2` and `ergonaut_one_right-seeeduino_xiao_ble-zmk.uf2` files
+2. Unzip `firmware.zip` - you should have `toledo_left-seeeduino_xiao_ble-zmk.uf2` and `toledo_right-seeeduino_xiao_ble-zmk.uf2` files
 3. Turn off the power for selected halve (move slider to position `OFF`)
 4. Connect selected halve to the PC via USB-C cable
 5. Press `RESET` button **twice** to enter DFU mode - you should see new USB device in your file manager
