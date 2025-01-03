@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "ergonaut_one.dtsi"
+#include "toledo.dtsi"
 
 &default_transform {
     col-offset = <6>;

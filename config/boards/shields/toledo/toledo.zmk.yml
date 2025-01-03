@@ -1,0 +1,11 @@
+file_format: '1'
+id: toledo
+name: Toledo
+type: shield
+url: https://github.com/torabravo/toledo
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - toledo_left
+  - toledo_right
