@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: toledo}
 layers:
   default:
   - '~'
@@ -39,7 +40,7 @@ layers:
   - {t: ESCAPE, h: sym}
   - {t: ␣, h: nav}
   - ↹
-  - ENTER
+  - {t: ENTER, h: f13}
   - {t: ⌫, h: num}
   - {t: ⌦, h: fun}
   nav:
@@ -214,3 +215,46 @@ layers:
   - ''
   - ''
   - {type: held}
+  f13:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F21
+  - F22
+  - F23
+  - F24
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F17
+  - F18
+  - F19
+  - F20
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F13
+  - F14
+  - F15
+  - F16
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
