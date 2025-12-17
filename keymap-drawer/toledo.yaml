@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: toledo}
 layers:
   default:
   - '~'
@@ -39,7 +40,7 @@ layers:
   - {t: ESCAPE, h: sym}
   - {t: ␣, h: nav}
   - ↹
-  - ENTER
+  - {t: ENTER, h: app}
   - {t: ⌫, h: num}
   - {t: ⌦, h: fun}
   nav:
@@ -214,3 +215,46 @@ layers:
   - ''
   - ''
   - {type: held}
+  app:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - F15
+  - F20
+  - F13
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F17
+  - F18
+  - F19
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - F14
+  - ''
+  - F16
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
