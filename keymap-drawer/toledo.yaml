@@ -14,16 +14,16 @@ layers:
   - P
   - '['
   - Caps Word
-  - {t: A, h: Ctrl}
-  - {t: S, h: Alt}
+  - {t: A, h: '$$phosphor:regular/control$$'}
+  - {t: S, h: '$$phosphor:regular/option$$'}
   - {t: D, h: RCMD}
   - {t: F, h: LEFT SHIFT}
   - G
   - H
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RCMD}
-  - {t: L, h: Alt}
-  - {t: ;, h: Ctrl}
+  - {t: L, h: '$$phosphor:regular/option$$'}
+  - {t: ;, h: '$$phosphor:regular/control$$'}
   - ''''
   - '`'
   - Z
@@ -37,10 +37,10 @@ layers:
   - .
   - /
   - \
-  - {t: ESCAPE, h: sym}
+  - {t: Esc, h: sym}
   - {t: ␣, h: nav}
   - ↹
-  - {t: ENTER, h: app}
+  - {t: Enter, h: app}
   - {t: ⌫, h: num}
   - {t: ⌦, h: fun}
   nav:
@@ -57,10 +57,10 @@ layers:
   - ''
   - ''
   - ''
-  - Ctrl
-  - Alt
+  - $$phosphor:regular/control$$
+  - $$phosphor:regular/option$$
   - $$phosphor:regular/command$$
-  - Shift
+  - $$phosphor:regular/arrow-fat-up$$
   - ''
   - Page Down
   - ←
@@ -100,10 +100,10 @@ layers:
   - ''
   - ''
   - ''
-  - Ctrl
-  - Alt
+  - $$phosphor:regular/control$$
+  - $$phosphor:regular/option$$
   - $$phosphor:regular/command$$
-  - Shift
+  - $$phosphor:regular/arrow-fat-up$$
   - ^
   - '*'
   - '{'
@@ -149,10 +149,10 @@ layers:
   - '6'
   - '-'
   - ''
-  - Shift
+  - $$phosphor:regular/arrow-fat-up$$
   - $$phosphor:regular/command$$
-  - Alt
-  - Ctrl
+  - $$phosphor:regular/option$$
+  - $$phosphor:regular/control$$
   - ''
   - ''
   - ''
@@ -179,31 +179,31 @@ layers:
   - F8
   - F9
   - F12
-  - VOLUME UP
-  - ⏮️
+  - $$phosphor:regular/speaker-high$$
+  - $$phosphor:regular/rewind$$
   - PLAY PAUSE
-  - ⏭️
+  - $$phosphor:regular/fast-forward$$
   - ''
-  - BRIGHTNESS INC
+  - $$phosphor:regular/sun$$
   - ''
   - ''
   - F4
   - F5
   - F6
   - F11
-  - VOLUME DOWN
-  - Shift
+  - $$phosphor:regular/speaker-low$$
+  - $$phosphor:regular/arrow-fat-up$$
   - $$phosphor:regular/command$$
-  - Alt
-  - Ctrl
-  - BRIGHTNESS DEC
+  - $$phosphor:regular/option$$
+  - $$phosphor:regular/control$$
+  - $$phosphor:regular/sun-dim$$
   - ''
   - ''
   - F1
   - F2
   - F3
   - F10
-  - MUTE
+  - $$phosphor:regular/speaker-x$$
   - ''
   - ''
   - ''
