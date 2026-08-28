@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: toledo}
 layers:
-  default:
+  base:
   - '~'
   - Q
   - W
@@ -80,12 +80,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   sym:
   - ''
   - '!'
@@ -124,11 +124,11 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   num:
   - ''
   - /
@@ -168,10 +168,10 @@ layers:
   - ''
   - .
   - '0'
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
+  - {t: ▽, type: trans}
   fun:
   - ''
   - ''
@@ -209,11 +209,11 @@ layers:
   - ''
   - ''
   - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   app:
   - {t: ▽, type: trans}
