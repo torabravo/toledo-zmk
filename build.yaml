@@ -1,7 +1,17 @@
 include:
-  - board: seeeduino_xiao_ble
+  # Dongle: central, no keys. Both halves connect to it as peripherals.
+  - board: xiao_ble/nrf52840/zmk
+    shield: toledo_dongle
+
+  # Keyboard halves, forced to peripheral role for the dongle setup.
+  # Remove the cmake-args to go back to a left-central, dongle-less keyboard.
+  - board: xiao_ble/nrf52840/zmk
     shield: toledo_left
-  - board: seeeduino_xiao_ble
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  - board: xiao_ble/nrf52840/zmk
     shield: toledo_right
-  - board: seeeduino_xiao_ble
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  - board: xiao_ble/nrf52840/zmk
     shield: settings_reset

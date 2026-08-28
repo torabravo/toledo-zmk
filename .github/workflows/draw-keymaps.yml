@@ -6,6 +6,7 @@ on:
     paths:
       - 'config/*.keymap'
       - 'config/includes/*.dtsi'
+      - 'keymap-drawer/layouts/*.json'
       - keymap-drawer/config.yaml
       - .github/workflows/draw-keymaps.yml
 
@@ -18,5 +19,8 @@ jobs:
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
-      draw_args: "toledo:'-k corne_rotated -l LAYOUT_split_3x6_3'"
+      # No layout specifier in draw_args on purpose: that would make the
+      # workflow skip json_path entirely (see check_for_layout_args in
+      # caksoylar/keymap-drawer draw-zmk.yml). Leaving it empty lets it pick up
+      # keymap-drawer/layouts/toledo.json, which has the real rotated thumbs.
       json_path: keymap-drawer/layouts

@@ -6,12 +6,37 @@ if SHIELD_TOLEDO_LEFT
 config ZMK_KEYBOARD_NAME
 	default "Toledo"
 
+# Central only when built without a dongle. The dongle build overrides this
+# to `n` via cmake-args in build.yaml.
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_TOLEDO_LEFT || SHIELD_TOLEDO_RIGHT
+if SHIELD_TOLEDO_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "Toledo"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+# Left and right halves both connect to the dongle.
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+	default 2
+
+# 2 peripherals + 5 host profiles. ZMK derives the profile count as
+# BT_MAX_PAIRED - ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS (app/include/zmk/ble.h),
+# so leaving this at ZMK's default of 6 would silently give only 4 profiles.
+config BT_MAX_CONN
+	default 7
+
+config BT_MAX_PAIRED
+	default 7
+
+endif
+
+if SHIELD_TOLEDO_LEFT || SHIELD_TOLEDO_RIGHT || SHIELD_TOLEDO_DONGLE
 
 config ZMK_SPLIT
 	default y

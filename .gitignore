@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Firmware archives downloaded from GitHub Actions
+*.zip
+*.uf2
+
+# Local west/Zephyr build output
+/build/
+/.west/
+/zephyr/
+/modules/
+/tools/
+/zmk/

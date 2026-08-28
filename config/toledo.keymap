@@ -1,11 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define DEF 0
-#define LWR 1
-#define RSE 2
-#define ADJ 3
-
 &lt { quick-tap-ms = <200>; };
 
 &mt {
@@ -15,15 +10,6 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri-layer {
-            if-layers = <1 1>;
-            then-layer = <1>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -34,17 +20,19 @@
 &kp GRAVE   &kp Z        &kp X       &kp C         &kp V             &kp B    &kp N        &kp M              &kp COMMA   &kp DOT     &kp FSLH        &kp BACKSLASH
                                      &lt 2 ESCAPE  &lt 1 SPACE       &kp TAB  &lt 5 ENTER  &lt 3 BSPC         &lt 4 DEL
             >;
+
+            display-name = "base";
         };
 
         layer_nav {
             bindings = <
-&none  &none      &none     &none     &none      &none  &kp PG_UP  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &none  &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none  &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-&none  &none      &none     &none     &none      &none  &none      &none         &none     &none          &none  &none
-                            &none     &none      &none  &none      &none         &none
+&none  &none      &none     &none     &none      &none   &kp PG_UP  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &none  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none   &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&none  &none      &none     &none     &none      &none   &none      &none         &none     &none          &none  &none
+                            &trans    &trans     &trans  &trans     &trans        &trans
             >;
 
-            label = "nav";
+            display-name = "nav";
         };
 
         layer_sym {
@@ -52,21 +40,21 @@
 &none        &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PERCENT    &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &none  &none
 &none        &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT   &kp CARET      &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &none  &none
 &bootloader  &none      &none     &none     &none       &kp AMPERSAND  &none         &kp LBKT              &kp RBKT               &kp UNDER  &none  &none
-                                  &none     &none       &none          &none         &none                 &none
+                                  &trans    &trans      &trans         &trans        &trans                &trans
             >;
 
-            label = "sym";
+            display-name = "sym";
         };
 
         layer_num {
             bindings = <
-&none  &kp FSLH  &kp N7  &kp N8   &kp N9  &kp PLUS   &none  &none      &none     &none     &none      &none
-&none  &kp STAR  &kp N4  &kp N5   &kp N6  &kp MINUS  &none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none
-&none  &none     &kp N1  &kp N2   &kp N3  &kp EQUAL  &none  &none      &none     &none     &none      &none
-                         &kp DOT  &kp N0  &none      &none  &none      &none
+&none  &kp FSLH  &kp N7  &kp N8   &kp N9  &kp PLUS   &none   &none      &none     &none     &none      &none
+&none  &kp STAR  &kp N4  &kp N5   &kp N6  &kp MINUS  &none   &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none
+&none  &none     &kp N1  &kp N2   &kp N3  &kp EQUAL  &none   &none      &none     &none     &none      &none
+                         &kp DOT  &kp N0  &trans     &trans  &trans     &trans
             >;
 
-            label = "num";
+            display-name = "num";
         };
 
         layer_fun {
@@ -74,10 +62,10 @@
 &none  &none  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_VOLUME_UP    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &none      &kp C_BRIGHTNESS_INC
 &none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &kp C_VOLUME_DOWN  &kp RSHFT   &kp RGUI          &kp RALT    &kp RCTRL  &kp C_BRIGHTNESS_DEC
 &none  &none  &kp F1  &kp F2  &kp F3  &kp F10  &kp K_MUTE         &none       &none             &none       &none      &bootloader
-                      &none   &none   &none    &none              &none       &none
+                      &trans  &trans  &trans   &trans             &trans      &trans
             >;
 
-            label = "fun";
+            display-name = "fun";
         };
 
         layer_app {
@@ -87,6 +75,8 @@
 &trans  &trans  &none    &kp F14  &none    &kp F16  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans   &trans   &trans   &trans  &trans  &trans
             >;
+
+            display-name = "app";
         };
     };
 };

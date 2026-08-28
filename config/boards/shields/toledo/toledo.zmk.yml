@@ -3,7 +3,7 @@ id: toledo
 name: Toledo
 type: shield
 url: https://github.com/torabravo/toledo
-requires: [seeeduino_xiao_ble]
+requires: [seeed_xiao]
 features:
   - keys
 siblings:

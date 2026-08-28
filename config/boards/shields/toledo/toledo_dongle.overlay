@@ -6,12 +6,21 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
+/*
+ * The dongle is a central with no keys of its own. It needs the *same*
+ * matrix transform as the halves, because split peripherals send already
+ * transformed key positions in full-keymap space (see ZMK
+ * app/src/split/bluetooth/service.c, `num_of_positions = ZMK_KEYMAP_LEN`).
+ *
+ * This is the master, un-offset transform: the halves apply their own
+ * col-offset locally (toledo_right.overlay sets col-offset = <6>).
+ * Keep this map byte-identical to the one in toledo.dtsi.
+ */
+
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,kscan = &mock_kscan;
         zmk,matrix_transform = &default_transform;
-        /* /delete-property/ zephyr,console; */
-        /* /delete-property/ zephyr,shell-uart; */
     };
 
     default_transform: keymap_transform_0 {
@@ -32,20 +41,10 @@
             >;
     };
 
-	kscan0: kscan_0 {
-		compatible = "zmk,kscan-gpio-matrix";
-		wakeup-source;
-
-		diode-direction = "col2row";
-		row-gpios
-			= <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&xiao_d  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&xiao_d  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&xiao_d  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			;
-	};
+    mock_kscan: kscan_mock_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
 };
-
-&xiao_spi { status = "disabled"; };
-&xiao_i2c { status = "disabled"; };
-&xiao_serial { status = "disabled"; };
